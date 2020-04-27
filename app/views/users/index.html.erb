@@ -1,23 +1,21 @@
+<h1>這是一個測試</h1>
+
 <%= form_for(User.new, url: '/users', method: 'post' ) do |f| %>
 <div>
-  <%= f.label :email, "帳號" %>
-  <%= f.text_field :email %>
+  <%= f.label :email, "帳號" %> <%= f.text_field :email %>
 </div>
 <div>
-  <%= f.label :password , "密碼"%>
-  <%= f.password_field :password %>
+  <%= f.label :password , "密碼"%> <%= f.password_field :password %>
 </div>
 <div>
-  <%= f.label :password_confirm , "密碼確認"%>
-  <%= f.password_field :password_confirm %>
+  <%= f.label :password_confirm , "密碼確認"%> <%= f.password_field
+  :password_confirm %>
 </div>
 <div>
-  <%= f.label :name , "姓名"%>
-  <%= f.text_field :name %>
+  <%= f.label :name , "姓名"%> <%= f.text_field :name %>
 </div>
 <div>
-  <%= f.label :tel , "電話"%>
-  <%= f.text_field :tel %>
+  <%= f.label :tel , "電話"%> <%= f.text_field :tel %>
 </div>
 <div>
   <%= f.submit "註冊" %>
